@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1">
+
+  <parameter name="host" value="partners.perfectomobile.com"/>
+  <parameter name="user" value="demo@newtglobal.com"/>
+  <parameter name="password" value="DEMO123"/>  
+  <parameter name="persona" value="Sara"/>  
+  <parameter name="platformName" value="iOS"/>
+  <parameter name="manufacturer" value="Apple"/>
+  <parameter name="model" value="iPhone-6S"/>
+  <parameter name="appURL" value="http://google.com/finance"/>
+  
+  <test name="NYSE stock comparison">
+    <classes>
+      <class name="test.NYSETest">
+      	<methods>
+        	<include name="compareNYSEStocks" />
+      	</methods>
+      </class>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

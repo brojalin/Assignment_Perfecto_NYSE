@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1">
+
+  <parameter name="host" value="partners.perfectomobile.com"/>
+  <parameter name="user" value="demo@newtglobal.com"/>
+  <parameter name="password" value="DEMO123"/>
+  <parameter name="deviceID" value="61944835"/>
+  <parameter name="pakageName" value="com.google.android.apps.maps"/>
+  <parameter name="persona" value="Georgia"/>
+  
+  <test name="Find Time To Reach Near By Restaurant">
+    <classes>
+      <class name="test.GoogleMapsTest">
+      	<methods>
+        	<include name="findTimeToNearByRestaurant" />
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+    <test name="Find Time To Reach Specific Place">
+    <classes>
+      <class name="test.GoogleMapsTest">
+      	<methods>
+        	<include name="findTimeToReachSpecificPlace" />
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+   <!-- Test -->
+</suite> <!-- Suite -->
